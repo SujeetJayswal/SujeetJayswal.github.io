@@ -1,88 +1,251 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sujeet Kumar's Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-        }
-        header {
-            background-color: #333;
-            color: #fff;
-            padding: 10px 0;
-            text-align: center;
-        }
-        nav ul {
-            list-style: none;
-            padding: 0;
-        }
-        nav ul li {
-            display: inline;
-            margin: 0 15px;
-        }
-        nav ul li a {
-            color: #fff;
-            text-decoration: none;
-        }
-        .container {
-            width: 80%;
-            margin: auto;
-            overflow: hidden;
-            padding: 20px;
-        }
-        footer {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 10px;
-            position: fixed;
-            left: 0;
-            bottom: 0;
-            width: 100%;
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sujeet Kumar | Research Portfolio</title>
+
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+<style>
+html{scroll-behavior:smooth}
+.hero-bg{
+background:linear-gradient(135deg,#0f172a,#1e3a8a,#4338ca);
+}
+.glass{
+backdrop-filter:blur(12px);
+background:rgba(255,255,255,.08);
+border:1px solid rgba(255,255,255,.15);
+}
+</style>
 </head>
-<body>
-    <header>
-        <h1>Sujeet Kumar</h1>
-        <p>PhD Scholar at IIT Dharwad</p>
-        <p>Research Focus: Language Identification and Language Diarization in Indian Languages</p>
-    </header>
-    <nav>
-        <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#research">Research</a></li>
-            <li><a href="#publications">Publications</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-    <div class="container" id="about">
-        <h2>About Me</h2>
-        <p>I am Sujeet Kumar, a PhD Scholar at IIT Dharwad specializing in Language Identification and Language Diarization in Indian Languages.</p>
-    </div>
-    <div class="container" id="research">
-        <h2>Research</h2>
-        <p>My research focuses on...</p>
-    </div>
-    <div class="container" id="publications">
-        <h2>Publications</h2>
-        <p>List your publications here.</p>
-    </div>
-    <div class="container" id="contact">
-        <h2>Contact</h2>
-        <p>Email: CS24DP008@iitdh.ac.in</p>
-    </div>
-    <footer>
-        <p>&copy; 2024 Sujeet Kumar. All Rights Reserved.</p>
-    </footer>
+
+<body class="bg-slate-50 text-slate-800">
+
+<nav class="fixed top-0 left-0 right-0 bg-white/90 backdrop-blur shadow z-50">
+<div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+<h1 class="font-bold text-xl">Sujeet Kumar</h1>
+<div class="hidden md:flex gap-6">
+<a href="#about">About</a>
+<a href="#research">Research</a>
+<a href="#experience">Experience</a>
+<a href="#publications">Publications</a>
+<a href="#contact">Contact</a>
+</div>
+</div>
+</nav>
+
+<section class="hero-bg min-h-screen flex items-center text-white">
+<div class="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-12 items-center">
+
+<div data-aos="fade-right">
+<h1 class="text-5xl md:text-7xl font-bold mb-4">Sujeet Kumar</h1>
+<h2 class="text-2xl md:text-3xl text-blue-200 mb-6">
+PhD Scholar, IIT Dharwad
+</h2>
+<p class="text-lg leading-8 mb-8">
+Research in Machine Learning, Deep Learning, Spoken Language Identification, Language Diarization,
+Speech Processing.
+</p>
+
+<div class="flex flex-wrap gap-4">
+<a href="#contact" class="bg-blue-600 hover:bg-blue-700 px-6 py-3 rounded-lg">Contact</a>
+<a href="#" class="border border-white px-6 py-3 rounded-lg hover:bg-white hover:text-black">Download CV</a>
+</div>
+</div>
+
+<div class="text-center" data-aos="fade-left">
+<div class="w-72 h-72 rounded-full bg-white/20 mx-auto flex items-center justify-center border-4 border-white/20">
+<i class="fas fa-user text-8xl"></i>
+</div>
+</div>
+
+</div>
+</section>
+
+<section id="about" class="py-20">
+<div class="max-w-6xl mx-auto px-6">
+<h2 class="text-4xl font-bold mb-8 text-center">About Me</h2>
+<div class="bg-white rounded-2xl shadow-lg p-8" data-aos="fade-up">
+<p class="text-lg leading-8">
+Currently pursuing PhD at IIT Mandi under the guidance of Prof. Dileep A. D.
+My research focuses on Spoken Language Identification for Indian Languages, Speech Processing,
+Deep Learning, Machine Learning, and Language Diarization for Indian Languages.
+</p>
+</div>
+</div>
+</section>
+
+<section class="bg-white py-20">
+<div class="max-w-6xl mx-auto px-6">
+<h2 class="text-4xl font-bold text-center mb-12">Research Highlights</h2>
+
+<div class="grid md:grid-cols-4 gap-6">
+
+<div class="shadow-lg rounded-xl p-6" data-aos="zoom-in">
+<i class="fas fa-microphone text-3xl mb-4 text-blue-600"></i>
+<h3 class="font-bold">Speech Processing</h3>
+</div>
+
+<div class="shadow-lg rounded-xl p-6" data-aos="zoom-in">
+<i class="fas fa-language text-3xl mb-4 text-blue-600"></i>
+<h3 class="font-bold">Spoken Language Identification</h3>
+</div>
+
+<div class="shadow-lg rounded-xl p-6" data-aos="zoom-in">
+<i class="fas fa-brain text-3xl mb-4 text-blue-600"></i>
+<h3 class="font-bold">Machine Learning & Deep Learning</h3>
+</div>
+
+<div class="shadow-lg rounded-xl p-6" data-aos="zoom-in">
+<i class="fas fa-wave-square text-3xl mb-4 text-blue-600"></i>
+<h3 class="font-bold">Language Diarization</h3>
+</div>
+
+</div>
+</div>
+</section>
+
+<section id="research" class="py-20 bg-slate-100">
+<div class="max-w-6xl mx-auto px-6">
+<h2 class="text-4xl font-bold text-center mb-12">Research Projects</h2>
+
+<div class="grid md:grid-cols-2 gap-8">
+
+<div class="bg-white rounded-2xl shadow-lg p-8" data-aos="fade-up">
+<h3 class="font-bold text-2xl mb-4">Spoken Language Identification</h3>
+<p>Research on spoken language identification for Indian languages.</p>
+</div>
+
+<div class="bg-white rounded-2xl shadow-lg p-8" data-aos="fade-up">
+<h3 class="font-bold text-2xl mb-4">Speaker Identification and Verification</h3>
+<p>I also worked on the project where collected and prepared the datasets for speaker identification and verification task.</p>
+</div>
+
+<div class="bg-white rounded-2xl shadow-lg p-8" data-aos="fade-up">
+<h3 class="font-bold text-2xl mb-4">Telecom Analytics Dashboard</h3>
+<p>Kafka, Flask, MongoDB and Machine Learning based predictive analytics to identify the anomalies, alarms, and telecom network resources.</p>
+</div>
+
+<div class="bg-white rounded-2xl shadow-lg p-8" data-aos="fade-up">
+<h3 class="font-bold text-2xl mb-4">Crossbar Switch in NS-2</h3>
+<p>MS thesis on design and implementation of crossbar switches in NS-2.</p>
+</div>
+
+</div>
+</div>
+</section>
+
+<section id="experience" class="py-20">
+<div class="max-w-6xl mx-auto px-6">
+<h2 class="text-4xl font-bold text-center mb-12">Experience</h2>
+
+<div class="border-l-4 border-blue-600 ml-4">
+
+<div class="ml-8 mb-10" data-aos="fade-right">
+<h3 class="font-bold text-xl">Project Officer, IIT Mandi</h3>
+<p class="text-blue-600">2023 - 2024</p>
+</div>
+
+<div class="ml-8 mb-10" data-aos="fade-right">
+<h3 class="font-bold text-xl">Project Engineer, IIT Mandi</h3>
+<p class="text-blue-600">2017 - 2020</p>
+</div>
+
+</div>
+</div>
+</section>
+
+<section class="bg-slate-900 text-white py-20">
+<div class="max-w-6xl mx-auto px-6">
+<h2 class="text-4xl font-bold text-center mb-12">Statistics</h2>
+
+<div class="grid md:grid-cols-4 gap-8 text-center">
+
+<div>
+<h3 class="counter text-5xl font-bold" data-target="10">0</h3>
+<p>Years Research</p>
+</div>
+
+<div>
+<h3 class="counter text-5xl font-bold" data-target="5">0</h3>
+<p>Projects</p>
+</div>
+
+<div>
+<h3 class="counter text-5xl font-bold" data-target="5">0</h3>
+<p>Research Areas</p>
+</div>
+
+<div>
+<h3 class="counter text-5xl font-bold" data-target="4">0</h3>
+<p>Publication</p>
+</div>
+
+</div>
+</div>
+</section>
+
+<section id="publications" class="py-20">
+<div class="max-w-6xl mx-auto px-6">
+<h2 class="text-4xl font-bold text-center mb-12">Publications</h2>
+
+<div class="bg-white rounded-2xl shadow-lg p-8" data-aos="fade-up">
+<h3 class="text-2xl font-bold mb-2">Design and Implementation of Crossbar Switch in NS2</h3>
+<p>Sujeet Kumar and Anand Srivastava</p>
+<p>ICCCNT 2014</p>
+</div>
+
+</div>
+</section>
+
+<section class="bg-white py-20">
+<div class="max-w-6xl mx-auto px-6">
+<h2 class="text-4xl font-bold text-center mb-12">Technical Skills</h2>
+
+<div class="flex flex-wrap gap-3 justify-center">
+<span class="bg-blue-100 px-4 py-2 rounded-full">Linux</span>
+<span class="bg-blue-100 px-4 py-2 rounded-full">Python</span>
+<span class="bg-blue-100 px-4 py-2 rounded-full">C++</span>
+<span class="bg-blue-100 px-4 py-2 rounded-full">Machine Learning</span>
+<span class="bg-blue-100 px-4 py-2 rounded-full">Deep Learning</span>
+<span class="bg-blue-100 px-4 py-2 rounded-full">MongoDB</span>
+<span class="bg-blue-100 px-4 py-2 rounded-full">MATLAB</span>
+</div>
+
+</div>
+</section>
+
+<section id="contact" class="bg-gradient-to-r from-blue-900 to-indigo-900 text-white py-20">
+<div class="max-w-4xl mx-auto px-6 text-center">
+<h2 class="text-4xl font-bold mb-8">Contact</h2>
+<p class="mb-3">Sujeet Kumar</p>
+<p class="mb-3">PhD Scholar, IIT Dharwad</p>
+<p class="mb-3">cs24dp008@iitdh.ac.in, jayswal.sujeet@gmail.com</p>
+</div>
+</section>
+
+<script>
+AOS.init({duration:1000,once:true});
+
+document.querySelectorAll('.counter').forEach(counter=>{
+const update=()=>{
+const target=+counter.dataset.target;
+const current=+counter.innerText;
+const inc=Math.ceil(target/50);
+if(current<target){
+counter.innerText=current+inc;
+setTimeout(update,40);
+}else{
+counter.innerText=target;
+}
+};
+update();
+});
+</script>
+
 </body>
 </html>
-
